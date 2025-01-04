@@ -45,7 +45,7 @@ julia> for i in q
 Note that if you launched the julia command-line interface with the `-t` option, the generated finite FLew-chains are not stored in order.
 
 You can expect to get all finite FLew-chains for $n\leq9$ in a few seconds.
-If you launched the julia command-line interface with the `-t` option, you can expect to get all finite FLew-chains for $n=10$ in less than 10 minutes.
+If you launched the julia command-line interface with the `-t` option using 8 threads, you can expect to get all finite FLew-chains for $n=10$ in less than 10 minutes.
 
 ## Results
 
