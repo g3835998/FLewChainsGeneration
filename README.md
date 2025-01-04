@@ -8,7 +8,7 @@ Launch a Julia command-line interface in your terminal:
 $ julia
 ```
 
-If you want to make use of multi-thread execution, add the `-t` option specifying the number `n` of cores to be used. Here's and example for launching the session using 8 cores:
+If you want to make use of multi-thread execution, add the `-t` option specifying the number `n` of threads to be used. Here's and example for launching the session using 8 threads:
 
 ```
 $ julia -t 8
