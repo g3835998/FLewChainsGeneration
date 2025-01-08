@@ -84,7 +84,7 @@ A structure representing a finite FLew-chain over a set of N linearly ordered el
 Given a set A of N linearly ordered elements A = {0, ..., N-1}, 
 C_N = {0, 1/(N-1), 2/(N-1), ..., (N-2)/(N-1), (N-1)/(N-1) = 1}.
 
-We could represent the Cayley's table for (C_N, ⋅) with an N × N matrix, but:
+We could represent the Cayley table for (C_N, ⋅) with an N × N matrix, but:
  - since the magma is abelian, we just need to represent its upper triangular
    using an (N*(N+1))÷2 vector;
  - since 1 is an identity element and 0 an absorbing element, we don't need
@@ -114,7 +114,7 @@ struct FiniteFLewChain{N}
             error("Wrong number of elements provided")
         end
         if !safe && !isassociative(cayleytable, N)
-            error("Cayley's table is not associative")
+            error("Cayley table is not associative")
         end
         return new{N}(cayleytable)
     end
